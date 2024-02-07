@@ -10,7 +10,7 @@ OBJ = $(SRC:.cpp=.o)
 
 all : $(NAME)
 
-$(NAME) : $(OBJ) Mutantstack.hpp
+$(NAME) : $(OBJ) MutantStack.hpp
 	$(CC) $(CPPFLAGS) $(OBJ) -o $(NAME)
 clean :
 	@rm -rf $(OBJ)

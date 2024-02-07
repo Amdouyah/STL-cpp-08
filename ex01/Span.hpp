@@ -12,9 +12,12 @@ class Span{
 	public:
 		Span();
 		Span(unsigned int n);
+		Span(const Span &copy);
+		Span &operator=(const Span &copy);
 		void addNumber(int n);
 		int shortestSpan();
 		int longestSpan();
+		~Span();
 };
 
 #endif

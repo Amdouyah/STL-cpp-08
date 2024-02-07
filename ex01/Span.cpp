@@ -5,6 +5,16 @@ Span::Span(){
 }
 Span::Span(unsigned int n) : N(n){
 }
+Span::Span(const Span &copy){
+    *this = copy;
+}
+Span &Span::operator=(const Span &copy){
+    this->N = copy.N;
+    this->num = copy.num;
+}
+Span::~Span(){
+}
+
 void Span::addNumber(int n){
 	if(num.size() >= N)
 		throw std::out_of_range("full");
