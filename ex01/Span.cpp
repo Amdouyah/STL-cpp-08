@@ -11,6 +11,7 @@ Span::Span(const Span &copy){
 Span &Span::operator=(const Span &copy){
     this->N = copy.N;
     this->num = copy.num;
+    return *this;
 }
 Span::~Span(){
 }

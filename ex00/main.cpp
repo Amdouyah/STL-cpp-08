@@ -1,4 +1,5 @@
 #include "easyfind.hpp"
+#include <vector>
 
 int main(){
 	std::vector<int> arr;
@@ -6,8 +7,9 @@ int main(){
 	arr.push_back(1);
 	arr.push_back(2);
 	arr.push_back(3);
+
 	try{
-		easyfind(arr, 2);
+		easyfind(arr, 15);
 	}
 	catch(const std::exception &e){
 		std::cerr << "Error: "<<  e.what() << std::endl;
